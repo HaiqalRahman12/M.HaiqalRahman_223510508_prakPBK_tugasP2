@@ -1,11 +1,9 @@
 <template>
   <div>
+    <h1>Masukan Kata-Kata</h1>
     <input v-model="text" placeholder="Type here">
-    <!-- Tombol untuk mengubah teks menjadi uppercase -->
     <button @click="applyFilter('uppercase')">Uppercase</button>
-    <!-- Tombol untuk mengubah teks menjadi lowercase -->
     <button @click="applyFilter('lowercase')">Lowercase</button>
-    <!-- Menampilkan hasil text yang telah difilter -->
     <p>{{ filteredText }}</p>
   </div>
 </template>
